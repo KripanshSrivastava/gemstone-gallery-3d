@@ -2,43 +2,43 @@ import { useScrollY } from "@/hooks/useReveal";
 import { Reveal } from "./Reveal";
 import { Cursor } from "./Cursor";
 
-import logoAsset from "@/assets/logo.jpeg.asset.json";
-import heroBannerAsset from "@/assets/hero-banner.jpeg.asset.json";
-import emeraldRingAsset from "@/assets/emerald-ring.jpeg.asset.json";
-import rubyGemsAsset from "@/assets/ruby-gems.jpeg.asset.json";
-import sapphireSetAsset from "@/assets/sapphire-set.jpeg.asset.json";
-import pinkStoneAsset from "@/assets/pink-stone.jpeg.asset.json";
-import topazBlueAsset from "@/assets/topaz-blue.jpeg.asset.json";
+import logoImage from "@/assets/logo.jpeg";
+import heroBannerImage from "@/assets/hero-banner.jpeg";
+import emeraldRingImage from "@/assets/emerald-ring.jpeg";
+import rubyGemsImage from "@/assets/ruby-gems.jpeg";
+import sapphireSetImage from "@/assets/sapphire-set.jpeg";
+import pinkStoneImage from "@/assets/pink-stone.jpeg";
+import topazBlueImage from "@/assets/topaz-blue.jpeg";
 
 const COLLECTION = [
   {
     name: "Emerald Halo Ring",
-    image: emeraldRingAsset.url,
+    image: emeraldRingImage,
     detail: "Emerald-cut Colombian emerald · brilliant halo",
   },
   {
     name: "Royal Blue Sapphire Suite",
-    image: rubyGemsAsset.url,
+    image: rubyGemsImage,
     detail: "20 pcs · calibrated emerald cut",
   },
   {
     name: "London Blue Topaz Ovals",
-    image: pinkStoneAsset.url,
+    image: pinkStoneImage,
     detail: "14 pcs · matched oval brilliants",
   },
   {
     name: "Padparadscha Pink Spinel",
-    image: sapphireSetAsset.url,
+    image: sapphireSetImage,
     detail: "5.10 ct · single unheated stone",
   },
   {
     name: "Burmese Ruby Hexagons",
-    image: topazBlueAsset.url,
+    image: topazBlueImage,
     detail: "11 pcs · hexagon step cut",
   },
   {
     name: "Signature Bridal Edit",
-    image: heroBannerAsset.url,
+    image: heroBannerImage,
     detail: "Curated set · gemstones only",
   },
 ];
@@ -86,7 +86,7 @@ export function StorePage() {
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#top" className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
+              src={logoImage}
               alt="Rashmi Gems logo"
               className="h-11 w-11 rounded-full object-cover shadow-[0_0_18px_-4px_var(--gold)] animate-float-slow"
             />
@@ -115,7 +115,7 @@ export function StorePage() {
           style={{ transform: `translateY(${scrollY * 0.25}px) scale(1.12)` }}
         >
           <img
-            src={heroBannerAsset.url}
+            src={heroBannerImage}
             alt="Assorted emerald, sapphire and ruby gemstones with gold jewellery"
             className="h-full w-full animate-slow-zoom object-cover object-right"
           />
@@ -143,7 +143,7 @@ export function StorePage() {
 
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pt-28">
           <img
-            src={logoAsset.url}
+            src={logoImage}
             alt="Rashmi Gems"
             className="fade-up mb-8 h-24 w-24 rounded-full object-cover shadow-[0_0_50px_-8px_var(--gold)]"
           />
@@ -268,7 +268,7 @@ export function StorePage() {
           <Reveal from="left">
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src={emeraldRingAsset.url}
+                src={emeraldRingImage}
                 alt="Emerald-cut emerald ring framed by a brilliant halo in yellow gold"
                 loading="lazy"
                 className="w-full animate-slow-zoom object-cover"
@@ -310,7 +310,7 @@ export function StorePage() {
       <footer id="visit" className="border-t border-border">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-6 py-16 text-center">
           <img
-            src={logoAsset.url}
+            src={logoImage}
             alt="Rashmi Gems"
             className="h-20 w-20 animate-float-slow rounded-full object-cover"
           />
