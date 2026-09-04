@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "cross-env NODE_ENV=production vite build",
     "build:dev": "vite build --mode development",
-    "build:node": "cross-env NITRO_PRESET=node-server vite build",
-    "start": "node .output/server/index.mjs",
+    "build:node": "cross-env NODE_ENV=production NITRO_PRESET=node-server vite build",
+    "start": "cross-env NODE_ENV=production node .output/server/index.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
