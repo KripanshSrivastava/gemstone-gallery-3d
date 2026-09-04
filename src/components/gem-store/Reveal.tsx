@@ -23,7 +23,7 @@ export function Reveal({ children, delay = 0, className = "", from = "up" }: Rev
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+      className={`transition-all duration-[500ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
         visible ? "translate-x-0 translate-y-0 scale-100 opacity-100 blur-0" : `opacity-0 blur-[6px] ${HIDDEN[from]}`
       } ${className}`}
     >

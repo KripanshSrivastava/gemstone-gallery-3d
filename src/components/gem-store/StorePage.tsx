@@ -198,8 +198,8 @@ export function StorePage() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {PILLARS.map((p, i) => (
-            <Reveal key={p.title} delay={i * 120} from="up">
-              <div className="glass-panel h-full rounded-2xl p-6 transition-all duration-500 hover:-translate-y-2 hover:border-primary/50">
+            <Reveal key={p.title} delay={i * 70} from="up">
+              <div className="glass-panel h-full rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:border-primary/50">
                 <div className="text-2xl text-primary">✦</div>
                 <h3 className="mt-4 font-display text-xl">{p.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.copy}</p>
@@ -224,14 +224,14 @@ export function StorePage() {
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {COLLECTION.map((item, i) => (
-            <Reveal key={item.name} delay={(i % 3) * 140} from="scale">
-              <article className="group glass-panel h-full overflow-hidden rounded-3xl transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_24px_60px_-30px_var(--gold)]">
+            <Reveal key={item.name} delay={(i % 3) * 80} from="scale">
+              <article className="group glass-panel h-full overflow-hidden rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_24px_60px_-30px_var(--gold)]">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.name}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-110"
+                    className="h-full w-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-110"
                   />
                   <div className="sheen pointer-events-none absolute inset-0" />
                 </div>
@@ -252,7 +252,7 @@ export function StorePage() {
       <section className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-6xl grid-cols-1 divide-y divide-border sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {STATS.map((s, i) => (
-            <Reveal key={s.label} delay={i * 150}>
+            <Reveal key={s.label} delay={i * 90}>
               <div className="px-6 py-12 text-center">
                 <div className="font-display text-4xl text-primary">{s.value}</div>
                 <div className="mt-2 text-sm text-muted-foreground">{s.label}</div>
@@ -276,7 +276,7 @@ export function StorePage() {
               <div className="sheen pointer-events-none absolute inset-0" />
             </div>
           </Reveal>
-          <Reveal from="right" delay={120}>
+          <Reveal from="right" delay={80}>
             <p className="text-xs font-semibold tracking-[0.4em] text-primary uppercase">
               The Atelier
             </p>

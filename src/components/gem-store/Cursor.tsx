@@ -31,9 +31,9 @@ export function Cursor() {
     };
 
     const loop = () => {
-      rx += (x - rx) * 0.16;
-      ry += (y - ry) * 0.16;
-      scale += (targetScale - scale) * 0.18;
+      rx += (x - rx) * 0.28;
+      ry += (y - ry) * 0.28;
+      scale += (targetScale - scale) * 0.3;
       ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%) scale(${scale})`;
       raf = requestAnimationFrame(loop);
     };
